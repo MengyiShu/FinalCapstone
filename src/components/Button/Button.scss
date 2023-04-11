@@ -1,0 +1,59 @@
+@use "../../styles/typography" as *;
+
+.h2{
+    background: url(../../assets/bg_h2_top.png) no-repeat center 0, url(../../assets/bg_h2_bottom.png) no-repeat center bottom;
+    background-color: #130d0c;
+    color:white;
+    margin: 0 auto;
+    &-title{
+         font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        text-align: center;
+        padding: 10px 30px 8px;
+    }
+}
+.buttonimg{
+    height: 140px;
+    vertical-align: bottom;
+    border: none;
+    max-width: 100%;
+    background: transparent;
+}
+.button{
+    background-image: url(../../assets/bg_page.jpg);
+}
+.content{
+    &-list{
+        justify-content: space-around;
+        margin-top:30px;
+        padding-bottom: 30px;
+        border-spacing: 15px 0;
+        display: flex;
+        border-collapse: separate;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        &_item{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        } 
+        &_button{
+            border-radius: 6px;
+            height:23px;
+            padding: 5px;
+            margin:5px;
+            color:white;
+            border: none;
+            background-color: #130d0c;
+        } 
+        &_buttoncontainer{
+            background: url(../../assets/bg_h2_top.png) no-repeat center 0, url(../../assets/bg_h2_bottom.png) no-repeat center bottom;
+            background-color: #130d0c;
+            margin:5px;
+        } 
+    }
+}

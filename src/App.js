@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./assets/Monster-Hunter-World-Logo.png";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Introduction from "./components/Introduction/Introduction";
+import Button from "./components/Button/Button";
+import "./App.scss";
+import MainPage from "./pages/MainPage/MainPage";
+import BuildYourArmor from "./pages/BuildYourArmor/BuildYourArmor";
+import Explore from "./pages/Explore/Explore";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/BuildYourArmor" element={<BuildYourArmor />}></Route>
+        <Route path="/Explore" element={<Explore />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

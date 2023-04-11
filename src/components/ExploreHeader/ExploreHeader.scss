@@ -1,0 +1,26 @@
+@use "../../styles/typography" as *;
+.h2{
+    padding:0px;
+    color:white;
+    background-color: #130d0c;
+    margin: 0 auto;
+    &-title{
+        background: url(../../assets/bg_h2_top.png) no-repeat center 0, url(../../assets/bg_h2_bottom.png) no-repeat center bottom;
+        font-size: 24px;
+        background-color: #130d0c;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        text-align: center;
+       padding: 10px 30px 8px;
+    }
+}
+.navlogo{
+    padding:7px;
+}
+.logo{
+    background-color: #130d0c;
+    border:none;
+}
+.exploreheader{
+    background-color: #130d0c;
+}

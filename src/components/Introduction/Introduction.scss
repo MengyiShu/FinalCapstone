@@ -1,0 +1,52 @@
+@use "../../styles/typography" as *;
+.introduction{
+    background-color: #130d0c;
+    position: relative;
+    padding:16px;
+    margin-bottom: 30px;
+}
+.h2{
+    padding:0px;
+    color:white;
+    background-color: #130d0c;
+    margin: 0 auto;
+    &-title{
+        background: url(../../assets/bg_h2_top.png) no-repeat center 0, url(../../assets/bg_h2_bottom.png) no-repeat center bottom;
+        font-size: 24px;
+        background-color: #130d0c;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        text-align: center;
+       padding: 10px 30px 8px;
+    }
+}
+.left{
+    width: 80%;
+    min-width: 1200px;
+    min-height: 640px;
+    &-img{
+        width: 100%;
+    max-width: 100%;
+    height: auto;
+    }
+}
+.right{
+     background-image: url(../../assets/bg_page.jpg);
+    width: 660px;
+    padding: 30px 30px 40px;
+    box-sizing: border-box;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.tit{
+    color: #565353;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+.text{
+    font-size: 12px;
+    line-height: 1.8;
+    color:white;
+}
