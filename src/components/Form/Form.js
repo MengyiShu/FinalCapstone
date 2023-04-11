@@ -63,7 +63,6 @@ function Form() {
     axios
       .get("https://mhw-db.com/charms")
       .then((response) => {
-        // console.log(response.data);
         setCharmList(response.data);
       })
       .catch(function (error) {
@@ -74,7 +73,6 @@ function Form() {
     axios
       .get("https://mhw-db.com/weapons")
       .then((response) => {
-        // console.log(response.data[1].name);
         setWeaponList(response.data);
       })
       .catch(function (error) {
@@ -85,7 +83,6 @@ function Form() {
     axios
       .get("https://mhw-db.com/armor")
       .then((response) => {
-        // console.log(response.data);
         setArmorList(response.data);
       })
       .catch(function (error) {
@@ -300,12 +297,6 @@ function Form() {
         legskill = legInfo.skills[0].skillName + " , ";
       }
       const charmskill = charmInfo.ranks[0].skills[0].skillName;
-      console.log(glovesskill);
-      console.log(headskill);
-      console.log(chestskill);
-      console.log(waistskill);
-      console.log(legskill);
-      console.log(charmskill);
       var allskills =
         headskill + glovesskill + chestskill + waist + legskill + charmskill;
       console.log(allskills);
