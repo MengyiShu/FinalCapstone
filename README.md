@@ -14,8 +14,7 @@ The user can manually select the desired build by selecting the weapon and armor
 Install mhw-armor-builder with npm
 
 ```bash
-  npm install mhw-armor-builder
-  cd mhw-armor-builder
+  npm install 
   npm start
 ```
     
